@@ -1,0 +1,184 @@
+:root
+{
+    --vermelho:#E50914;
+    --preta:#141414;
+}
+
+/*reset*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*elementos base*/
+body
+{
+    background: var(--preta);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+header .container
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: space-between*/
+    justify-content: space-evenly;
+}
+
+header .logo
+{
+    color: var(--vermelho);
+    font-family: 'Arial Black';
+    font-size: 40px;
+    /*margin-left: 5px*/
+}
+
+header nav a
+{
+    text-decoration: none;
+    color:#AAA;
+    margin-right: 10px;
+}
+
+header nav a:hover
+{
+    color: #fff;
+}
+
+/*coisas relacionadas ao jogo*/
+.game-principal
+{
+    font-size: 16px;
+
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url("../img/fundo-thewitcher3.jpeg");
+    background-size: cover;
+    
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding-left: 15px;
+}
+
+.game-principal .container
+{
+    width: 50%;
+}
+
+.game-principal .titulo
+{    
+    font-size: 40px;
+    margin-top: 15%;
+    margin-bottom: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+.game-principal .descricao
+{
+    margin-bottom: 25px;
+}
+
+.game-principal .botao
+{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 20px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.game-principal .botao i
+{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.game-principal .botao:hover
+{
+    background-color: white;
+    color:black;
+}
+
+.box-games
+{
+    height:100%;
+    width:100%;
+    display: block;
+}
+
+.carrosel-jogos
+{
+    padding: 3px;
+}
+
+.content
+{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+
+    width: 100%;
+    margin-top: 15px;
+}
+
+iframe
+{
+    width: 95%;
+}
+
+.content .botao
+{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: #fff;
+    padding: 20px 30px;
+    
+    margin-top: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.content .botao i
+{
+    margin-right: 5px;
+    font-size: 15px;
+}
+
+.content .botao a 
+{
+    color:#FFF;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.content .botao:hover
+{
+    background-color: white;
+    color:black;
+}
+
+.content .botao:hover a
+{
+    color: black;
+}
+
+#botao-content
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

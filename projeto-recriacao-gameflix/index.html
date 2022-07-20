@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./style/main.css">
+
+        <!--responsividade a celular e tablets-->
+        <link rel="stylesheet" href="./style/responsive.css">
+
+        <!--owl css-->
+        <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+        <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
+
+        <title>GAMEFLIX</title>
+    </head>
+    <body>        
+        <header>
+            <div class="container">
+                <h2 class="logo">GAMEFLIX</h2>
+                <nav>
+                    <a href="#">Início</a>
+                    <a href="#">Ação</a>
+                    <a href="#">Luta</a>
+                    <a href="#">RPG</a>
+                    <a href="#">Sport</a>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <div class="game-principal" id="game-principal" data-show="0" onload="escrever_conteudo(this)">
+                <div class="container">
+                    <h3 class="titulo" id="titulo">THE WITCHER 3</h3>
+                    <p class="descricao" id="descricao">Torne-se um bruxo, um dos últimos mercenários caçadores de monstros. Aventure-se por reinos em guerra para encontrar a criança da profecia, uma arma senciente capaz de destruição imensa.</p>
+                    
+                    <div class="botoes">
+                        <button role="button" class="botao" id="botao1" value="0" onclick="redirect_play(this)">
+                            <i class="fa-solid fa-circle-play"></i>
+                            ASSISTIR AGORA
+                        </button>
+                        <button role="button" class="botao" id="botao2" value="0" onclick="redirect_info(this)">
+                            <i class="fa-solid fa-circle-info"></i>
+                            MAIS INFORMAÇÕES
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="carrosel-jogos">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img class="box-games" src="./img/capa-thewitcher3.jpeg" alt="capa cuphead" onclick="trocar_titulo(0)"></div>
+                <div class="item"><img class="box-games" src="./img/capa-devilmaycry5.jpeg" alt="capa devil may cry 5" onclick="trocar_titulo(1)"></div>
+                <div class="item"><img class="box-games" src="./img/capa-hollowknight.jpeg" alt="capa hollow knight" onclick="trocar_titulo(2)"></div>
+                <div class="item"><img class="box-games" src="./img/capa-sonicmania.jpeg" alt="capa sonic mania" onclick="trocar_titulo(3)"></div>
+                <div class="item"><img class="box-games" src="./img/capa-cuphead.jpeg" alt="capa the wither 3" onclick="trocar_titulo(4)"></div>
+                <div class="item"><img class="box-games" src="./img/capa-residentevil2.jpeg" alt="resident evil 2" onclick="trocar_titulo(5)"></div>
+                <div class="item"><img class="box-games" src="./img/capa-minecraft.jpeg" alt="minecraft" onclick="trocar_titulo(6)"></div>
+                <div class="item"><img class="box-games" src="./img/capa-ffxiv.jpeg" alt="final fantasy xiv" onclick="trocar_titulo(7)"></div>
+            </div>
+        </div>
+
+        <script src="https://kit.fontawesome.com/13c480edba.js" crossorigin="anonymous"></script>
+        <script src="./js/main.js"></script>
+        <script src="./js/owl/jquery.min.js"></script>
+        <script src="./js/owl/owl.carousel.min.js"></script>        
+        <script src="./js/owl/setup.js"></script>
+    </body>
+</html>

@@ -1,0 +1,199 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: helvetica;
+    font-size: 15px;
+}
+
+body
+{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #5358f1;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.discord-wrapper
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    height: 100vh;
+}
+
+.discord-phone
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.discord-phone img
+{
+    height: 50rem;
+}
+
+.discord-login
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.login
+{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #36393f;
+    width: 100%;
+    padding: 1.3rem 0;
+    border-radius: 8px;
+}
+
+.login:nth-child(1)
+{
+    min-height: 19rem;
+    max-width: 570px;
+}
+
+.login:nth-child(2)
+{
+    max-width: 570px;
+}
+
+.discord-logo
+{
+    height: 3rem;
+}
+
+.profile-photo
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-photo img
+{
+    min-height: 6rem;
+    max-height: 7rem;
+}
+
+.discord-login1
+{
+    margin-top: 10px;
+    background-color: #5358f1;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.discord-logout
+{
+    color:#0095F6;
+    margin-top: 0.5rem;
+}
+
+.not-account
+{
+    color: #a0a0a0;
+}
+
+.link-blue
+{
+    color: #0095F6;
+}
+
+.get-the-app
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.get-app
+{
+    color: #ffffff;
+}
+
+.download{
+    display: flex;
+    width:100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download
+{
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1)
+{
+    background-image: url("./img/googleplay-button.png");
+}
+
+.app-download:nth-child(2)
+{
+    background-image: url("./img/apple-button.png");
+}
+
+/* parte de celular/tablet */
+
+@media (max-width: 1024px)
+{
+    .discord-wrapper
+    {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px)
+{
+    .body
+    {
+        background: #FFFFFF;
+    }
+
+    .discord-wrapper
+    {
+        width: 90%;
+    }
+
+    .discord-phone
+    {
+        display : none;
+    }
+
+    .discord.login
+    {
+        width: 100%;
+    }
+
+    .app-download
+    {
+        height: 2rem;
+        width: 7rem;
+    }
+}
